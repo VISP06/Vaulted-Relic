@@ -164,22 +164,27 @@ void reverse_array(int nums[], int size){
 }
 
 int find_max(int arr[], int size){
-    if (size <= 0) return -1;
-    int max=arr[0];
-    for(int i=1;i<size;i++){
-        if(max<arr[i]){
-            max=arr[0];
+    if (size <= 0) {
+        return -1; 
+    }
+    int max = arr[0];
+    for(int i = 1; i < size; i++){
+        if(max < arr[i]){
+            max = arr[i];
         }
     }
     return max;
 }
 
 int find_min(int arr[], int size){
-    int min = arr[0];
-    for(int i=1;i<size;i++){
-        if(min>arr[i]){
-            min=arr[i];
-        }
-        return min;
+    if (size <= 0) {
+        return -1; 
     }
+    int min = arr[0];
+    for(int i = 1; i < size; i++){
+        if(min > arr[i]){
+            min = arr[i];
+        }
+    }
+    return min; 
 }
