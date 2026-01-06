@@ -53,4 +53,19 @@ int find_max(int arr[], int size);
 // Time Complexity: O(n)
 int find_min(int arr[], int size);
 
+// --- Stack Data Structure ---
+#define MAX_STACK_SIZE 100
+typedef struct {
+    int items[MAX_STACK_SIZE];
+    int top;
+} Stack;
+
+void stack_init(Stack* s);
+int stackIsFull(Stack* s);
+int stackIsEmpty(Stack* s);
+void stack_push(Stack* s, int value);
+int stack_pop(Stack* s);
+void checkPalindrome(Stack* s);
+int peek(Stack* s);
+
 #endif // Vault.h
