@@ -67,5 +67,6 @@ void stack_push(Stack* s, int value);
 int stack_pop(Stack* s);
 void checkPalindrome(Stack* s);
 int peek(Stack* s);
+void stack_display(Stack* s);
 
 #endif // Vault.h

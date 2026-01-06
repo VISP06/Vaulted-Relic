@@ -162,3 +162,17 @@ int peek(Stack* s){
     }
     return s->items[s->top];
 }
+
+void stack_display(Stack* s) {
+    if (stackIsEmpty(s)) {
+        printf("Stack is empty\n");
+        return;
+    }
+    
+    printf("Stack contents: \n");
+    // We print from top down to bottom so it looks like a stack
+    for (int i = s->top; i >= 0; i--) {
+        printf("| %d |\n", s->items[i]);
+    }
+    printf(" -----\n");
+}
